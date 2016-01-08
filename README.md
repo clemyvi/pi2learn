@@ -1,2 +1,2 @@
 # pi2learn
-a raspberry pi based adaptive learning platform
+a raspberry pi-based adaptive learning platform
