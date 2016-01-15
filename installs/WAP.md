@@ -65,6 +65,7 @@ write:
     #wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 
 then run: 
+
     sudo ifconfig wlan0 192.168.42.1
 
 ### /etc/hostapd/hostapd.conf
