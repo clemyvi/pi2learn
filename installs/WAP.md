@@ -2,7 +2,7 @@
 
 This tutorial is mostly adapted from [the adafruit website](https://learn.adafruit.com/downloads/pdf/setting-up-a-raspberry-pi-as-a-wifi-access-point.pdf)
 
-* Hardware user: [Plugable USB 2.0 Wireless N 802.11n 150 Mbps Nano WiFi Network Adapter (Realtek RTL8188CUS Chipset)](http://www.amazon.co.uk/gp/product/B00H28H8DU?psc=1&redirect=true&ref_=oh_aui_search_detailpage)
+* Hardware used: [Plugable USB 2.0 Wireless N 802.11n 150 Mbps Nano WiFi Network Adapter (Realtek RTL8188CUS Chipset)](http://www.amazon.co.uk/gp/product/B00H28H8DU?psc=1&redirect=true&ref_=oh_aui_search_detailpage)
 
 ### Installations
 First, install the HostAPD (Host access point daemon) and the DHCP server:
