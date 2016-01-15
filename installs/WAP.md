@@ -18,8 +18,7 @@ First, install the HostAPD (Host access point daemon) and the DHCP server:
 
     sudo nano /etc/dhcp/dhcpd.conf
 
-> comment out the lines: #option domain-name "example.org";
-#option domain-name-servers ns1.example.org, ns2.example.org;
+> comment out the lines: #option domain-name "example.org"; #option domain-name-servers ns1.example.org, ns2.example.org;
 
 
 > uncomment authoritative; after "If this DHCP server is the official DHCP server for the local network, the authoritative directive should be uncommented"
