@@ -18,6 +18,10 @@ First, install the HostAPD (Host access point daemon) and the DHCP server:
 
     sudo nano /etc/dhcp/dhcpd.conf
 
+> comment out the lines: #option domain-name "example.org";
+#option domain-name-servers ns1.example.org, ns2.example.org;
+
+
 > uncomment authoritative; after "If this DHCP server is the official DHCP server for the local network, the authoritative directive should be uncommented"
 
 Then at the bottom of the file add the config you want:
@@ -71,7 +75,7 @@ then run:
     sudo ifconfig wlan0 192.168.42.1
 
 ### /etc/hostapd/hostapd.conf
-Configuring the access points details
+Create a new file configuring the access points details
 
     interface=wlan0
     #driver=rtl871xdrv
@@ -87,11 +91,14 @@ Configuring the access points details
     wpa_pairwise=TKIP
     rsn_pairwise=CCMP
     
-Note that we uncomment the driver line here.
+Note that we uncomment the driver line here (as compared to adafruit instructions).
 
 ### /etc/default/hostapd
 Tell the pi to find this configuration file by editing to: 
+
     DAEMON_CONF="/etc/hostapd/hostapd.conf"
+    
+Don't forget to uncomment the line!
     
 ### Final steps
 Now to test is it works: 
