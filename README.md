@@ -8,4 +8,5 @@ a raspberry pi based adaptive learning platform
 2. Set-up pi as a wifi access point: wifi dongle with RTL8188CUS chipset
 3. install node.js
 4. install postgres (9.5)
-5. install RTC - ds1307 module
+5. install dropbox-uploader
+6. install RTC - ds1307 module
