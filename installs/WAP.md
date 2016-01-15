@@ -4,8 +4,8 @@ This tutorial is mostly adapted from [the adafruit website](https://learn.adafru
 
 ### Installations
 First, install the HostAPD (Host access point daemon) and the DHCP server:
-> hostapd is a user space daemon for wireless access point and authentication servers.
-> Internet Systems Consortium's, Dynamic Host Configuration Protocol server for automatic IP address assignment
+*hostapd is a user space daemon for wireless access point and authentication servers.
+*Internet Systems Consortium's, Dynamic Host Configuration Protocol server for automatic IP address assignment
 
     sudo apt-get install hostapd isc-dhcp-server
     
