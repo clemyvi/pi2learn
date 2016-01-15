@@ -7,10 +7,12 @@ First, install the HostAPD (Host access point daemon) and the DHCP server:
 * hostapd is a user space daemon for wireless access point and authentication servers.
 * Internet Systems Consortium's, Dynamic Host Configuration Protocol server for automatic IP address assignment
 
+
     sudo apt-get install hostapd isc-dhcp-server
     
 ### /etc/dhcp/dhcpd.conf
 > edit the file that sets up our DHCP server: - this allows wifi connections to automatically get IP addresses, DNS, etc.
+
 
     sudo nano /etc/dhcp/dhcpd.conf
 
@@ -90,13 +92,16 @@ Tell the pi to find this configuration file by editing to:
     
 ### Final steps
 Now to test is it works: 
+
     sudo /usr/sbin/hostapd /etc/hostapd/hostapd.conf
 
 To set it up as a deamon service: 
+
     sudo service hostapd start
     sudo service isc-dhcp-server start
     
 To make sure it runs every time on boot: 
+
     sudo update-rc.d hostapd enable
     sudo update-rc.d isc-dhcp-server enable
 
